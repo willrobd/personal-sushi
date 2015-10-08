@@ -1,0 +1,77 @@
+	$break-one: 380px;
+
+	body {
+		margin:0;
+		color:#333;
+		font-size: 16px;
+		font-family: Verdana, Arial, sans-serif;
+		background-color: #ddd;
+		@media (max-width: $break-one){
+			margin: 0;
+		}
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	nav ul {
+		/*position: absolute;
+		top: 10px;
+		right: 10px;*/
+		float: right;
+	}
+	nav li {
+		display: inline-block;
+	}
+	#info {
+		width: 180px;
+		background-color: #f0dfb4;
+		padding: 8px;
+		border: 1px solid #600;
+		float: left;
+		margin: 0 20px 20px 0;
+		@media (max-width: $break-one){
+			width: 100%;
+		}
+		table {
+			@media (max-width: $break-one){
+				width:100%
+			}
+			ul {
+				@media (max-width: $break-one){
+					text-align: center;
+				}
+			}
+		}
+	}
+	article {
+		margin: 0 20px 20px 20px;
+	}
+	blockquote {
+		font-style: italic;
+		font-size: 24px;
+		width: 25%;
+		float: right;
+		@media (max-width: $break-one){
+			width: 100%;
+			float: none;
+			margin: 20px 0;
+		}
+	}
+	.align-right {
+		float: right;
+		@media (max-width: $break-one) {
+			float: none; 
+		}
+	}
+	#wrapper {
+		max-width: 960px;
+		margin: 0 auto;
+		background-color: #fff;
+		/*position: relative;*/
+		padding: 10px;
+	}
+	header {
+		margin: 20px;
+	}
